@@ -12,11 +12,11 @@ See [README.md](./200/README.md)
 
 See [README.md](./300/README.md)
 
-== WE ARE HERE ==
-
 ## 400 - Manifest
 
 See [README.md](./400/README.md)
+
+== WE ARE HERE ==
 
 ## 500 - Config Flow
 

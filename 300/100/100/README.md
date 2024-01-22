@@ -14,8 +14,8 @@ To perform a one-off authorization with GitHub to grant GitLab access your repos
    - b. Select **Run CICD for external repository**.
    - c. Select **GitHub**.
    - d. For **Personal Access Token**, paste the token (here: the token named ```Agility-Game-HACS-PAT``` we saved earlier) and click **Authenticate**.
-   - ~~e. Select **List Repositories**.~~
-   - ~~f. Select **Connect** to select the repository.~~
+   - e. Select **Collaborated** tab and choose to **import** the GitHub repository (here: ```agility-game/home-assistant-community-store```). If ```agility-game/home-assistant-community-store``` it is not listed, make sure you add yourself as a Collaborator to the GitHub repository (here: ```agility-game/home-assistant-community-store```) via **Settings** > **Collaborators and teams** for this GitHub repository.
+   - f. Select **Connect** to select the repository (here: ```agility-game/home-assistant-community-store```).
 
 4. In GitHub, add ```.gitlab-ci.yml``` to [configure GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html).
 

@@ -6,10 +6,10 @@ GitLab CI/CD can be used with GitHub.com and GitHub Enterprise by creating a CI/
 
 Watch a video on [Using GitLab CI/CDpipelines with GitHub repositories](https://www.youtube.com/watch?v=qgl3F2j-1cI)
 
-## 100 - Connect with Personal Access Token
+## 100 - Connect with Personal Access Token (Our Choice)
 
 See [README.md](./100/README.md)
 
-## 200 - Connect Manually
+## 200 - Connect Manually (for GitHub Enterprise only)
 
 See [README.md](./200/README.md)

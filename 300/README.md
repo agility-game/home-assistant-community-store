@@ -54,7 +54,7 @@ See [README.md](./1200/README.md)
 
 See [README.md](./1300/README.md)
 
-## 1400 - Listening for events
+## 1400 - Listening for Events
 
 See [README.md](./1400/README.md)
 

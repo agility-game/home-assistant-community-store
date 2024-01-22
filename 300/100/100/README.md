@@ -6,8 +6,8 @@ To perform a one-off authorization with GitHub to grant GitLab access your repos
 
 1. In GitHub, create a token:
    - a. Open https://github.com/settings/tokens/new
-   - b. Create a **Personal Access Token**
-   - c. Enter a **Token description** and update the scope to allow ```repo``` and ```admin:repo_hook``` so that GitLab can access your project, update commit statuses, and create a web hook to notify GitLab of new commits.
+   - b. Create a **Personal Access Token - Fine-grained tokens**
+   - c. Enter a **Token Name** (here: ```Agility-Game-HACS-PAT```) and a **Token description** (here: ```Agility Game - Home Assistant Community Store (HACS) - Personal Access Token```), choose an **Expiration** (here: 90 days), with a **Resource owner** (here: ```agility-game```). For Repository Access choose **Only select repositories*** and choose the repository (here: ```agility-game/home-assistant-community-store```). For Permissions, for Repository permissions, **allow read and write** for ```Actions```, ```Content```, ```Issues```, ```Webhooks``` and ```Workflows``` so that GitLab can access your project, update commit statuses, and create a web hook to notify GitLab of new commits.
 
 2. In GitLab, create a project:
    - a. On the left sidebar, at the top, select **Create new (+)** and **New project/repository**.

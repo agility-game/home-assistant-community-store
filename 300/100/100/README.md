@@ -19,7 +19,7 @@ To perform a one-off authorization with GitHub to grant GitLab access your repos
    - g. For **To GitLab** pick **agility-game/home-assistant** / **home-assistant-community-store**.
    - h. Select **Connect** to select the repository (here: ```agility-game/home-assistant-community-store```).
 
-4. In GitHub, add ```.gitlab-ci.yml``` to [configure GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html).
+4. In GitHub, add ```.gitlab-ci.yml``` at the root of your repository to [configure GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html). This file is where you define the CI/CD jobs.
 
 GitLab:
 

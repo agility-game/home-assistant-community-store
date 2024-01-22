@@ -16,8 +16,7 @@ If your integration is going to integrate one or more devices, you will need to 
 
 ## 200 - Integrating services - ```services.yaml```
 
-
-
+If your integration is going to register services, it will need to provide a description of the available services. The description is stored in ```services.yaml```. [More information about ```services.yaml```](https://developers.home-assistant.io/docs/dev_101_services).
 
 ## 300 - Data update coordinator
 

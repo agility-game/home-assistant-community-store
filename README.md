@@ -3,6 +3,8 @@ home-assistant-community-store
 
 Based on "Home Assistant Community Store (HACS)" at https://hacs.xyz/
 
+Based on "Creating your first integration" at https://developers.home-assistant.io/docs/creating_component_index/
+
 ## 100 - Introduction
 
 See [README.md](./100/README.md)

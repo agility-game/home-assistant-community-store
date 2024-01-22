@@ -18,10 +18,15 @@ If your integration is going to integrate one or more devices, you will need to 
 
 If your integration is going to register services, it will need to provide a description of the available services. The description is stored in ```services.yaml```. [More information about ```services.yaml```](https://developers.home-assistant.io/docs/dev_101_services).
 
-## 300 - Data update coordinator
+## 300 - Data update coordinator - ```coordinator.py```
 
+There are multiple ways for your integration to receive data, including push or poll. Commonly integrations will fetch data with a single coordinated poll across all entities, which requires the use of a ```DataUpdateCoordinator```. If you want to use one, and you choose to create a subclass of it, it is recommended to define the coordinator class in ```coordinator.py```. [More information about ```DataUpdateCoordinator```](https://developers.home-assistant.io/docs/integration_fetching_data/#coordinated-single-api-poll-for-data-for-all-entities).
 
 ## 400 - Where Home Assistant looks for integrations
 
+Home Assistant will look for an integration when it sees the domain referenced in the config file (i.e. ```mobile_app:```, or in our case ```agility-game:```) or if it is a dependency of another integration. Home Assistant will look at the following locations:
 
-=== WE ARE HERE ===
+- ```<config directory>/custom_components/<domain>```
+- ```homeassistant/components/<domain>``` (built-in integrations)
+
+You can override a built-in integration by having an integration with the same domain in your ```<config directory>/custom_components``` folder. [The ```manifest.json``` file requires a version tag when you override a core integration](https://developers.home-assistant.io/docs/creating_integration_manifest/#version). An overridden core integration can be identified by a specific icon in the upper right corner of the integration box in the overview [Show integrations of my Home Assistant](https://my.home-assistant.io/redirect/integrations/). Note that overriding built-in integrations is not recommended as you will no longer get updates. It is recommended to pick a unique name.

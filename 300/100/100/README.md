@@ -23,7 +23,7 @@ To perform a one-off authorization with GitHub to grant GitLab access your repos
 
 GitLab:
 
-1. Imports the project (here: ```agility-game/home-assistant-community-store```).
+1. Imports the project (here: ```agility-game/home-assistant/home-assistant-community-store```).
 2. Enables [Pull Mirroring](https://docs.gitlab.com/ee/user/project/repository/mirror/pull.html).
 3. Enables [GitHub project integration](https://docs.gitlab.com/ee/user/project/integrations/github.html).
 4. Create a web hook on GitHub to notify GitLab of new commits.

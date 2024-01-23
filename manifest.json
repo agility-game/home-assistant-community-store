@@ -1,4 +1,5 @@
 {
   "domain": "agility_game",
-  "name": "Agility Game"
+  "name": "Agility Game",
+  "version": "0.1.0"
 }

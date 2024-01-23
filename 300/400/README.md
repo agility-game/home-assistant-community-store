@@ -36,6 +36,17 @@ Or a minimal example that you can copy into your project:
 ```
 manifest.json
 
+Or in our case the manifest would be:
+
+```
+{
+  "domain": "agility_game",
+  "name": "Agility Game",
+  ...
+}
+```
+manifest.json
+
 ## 100 - Domain
 
 See [README.md](./100/README.md)

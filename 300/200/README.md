@@ -34,6 +34,18 @@ async def async_setup(hass, config):
     return True
 ```
 
+In our case, this would be:
+
+```
+DOMAIN = "agility_game"
+
+async def async_setup(hass, config):
+    hass.states.async_set("agility_game.world", "Paulus")
+
+    # Return boolean to indicate that initialization was successful.
+    return True
+```
+
 Create a file ```<config_dir>/custom_components/hello_state/__init__.py``` with one of the two codeblocks. In addition a manifest file is required with below keys as the bare minimum. Create ```<config_dir>/custom_components/hello_state/manifest.json```.
 
 ```
@@ -45,6 +57,20 @@ Create a file ```<config_dir>/custom_components/hello_state/__init__.py``` with 
 ```
 
 To load this, add ```hello_state:``` to your ```configuration.yaml file```.
+
+In our case this would be:
+
+Create a file ```<config_dir>/custom_components/agility_game/__init__.py``` with one of the two codeblocks. In addition a manifest file is required with below keys as the bare minimum. Create ```<config_dir>/custom_components/agility_game/manifest.json```.
+
+```
+{
+  "domain": "agility_game",
+  "name": "Agility Game",
+  "version": "0.1.0"
+}
+```
+
+To load this, add ```agility_game:``` to your ```configuration.yaml file```.
 
 ## What the scaffold offers
 

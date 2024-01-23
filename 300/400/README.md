@@ -45,7 +45,7 @@ Or in our case the manifest would be:
   "version": "0.1.0",
   "codeowners": [],
   "dependencies": [],
-  "documentation": "https://www.home-assistant.io/custom-components/agility-game",
+  "documentation": "https://www.home-assistant.io/components/agility-game",
   "integration_type": "hub",
   "iot_class": "cloud_polling",
   "requirements": []

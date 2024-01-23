@@ -42,6 +42,7 @@ Or in our case the manifest would be:
 {
   "domain": "agility_game",
   "name": "Agility Game",
+  "version": "0.1.0",
   ...
 }
 ```
